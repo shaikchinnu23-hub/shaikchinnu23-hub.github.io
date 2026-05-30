@@ -1,54 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Resume</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume | Shaik Nazeer Basha</title>
+
 <link rel="stylesheet" href="style.css">
+
+<style>
+.resume-container{
+    max-width:1200px;
+    margin:40px auto;
+    background:#1f2f4d;
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+.resume-container h1{
+    color:white;
+    font-size:60px;
+    margin-bottom:10px;
+}
+
+.resume-container p{
+    color:#d8d8d8;
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.resume-image{
+    width:100%;
+    max-width:900px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:15px 35px;
+    background:#2f6df6;
+    color:white;
+    text-decoration:none;
+    border-radius:12px;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#1f56d8;
+    transform:translateY(-3px);
+}
+</style>
+
 </head>
 <body>
 
-<nav class="navbar">
-<div class="logo">Nazeer Basha</div>
+<nav>
+    <div class="logo">Nazeer Basha</div>
 
-<ul class="nav-links">
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="certificates.html">Certificates</a></li>
-<li><a href="contact.html">Contact</a></li>
-<li><a href="resume.html">Resume</a></li>
-</ul>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="certificates.html">Certificates</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resume.html">Resume</a></li>
+    </ul>
 </nav>
 
-<div class="container">
+<div class="resume-container">
 
-<div class="card center">
+    <h1>📄 My Resume</h1>
 
-<h1>📄 My Resume</h1>
+    <p>Professional Resume of Shaik Nazeer Basha</p>
 
-<p>Professional Resume of Shaik Nazeer Basha</p>
+    <img src="resume-preview-v2.jpg"
+         alt="Resume Preview"
+         class="resume-image">
 
-<br><br>
+    <br>
 
-<img
-src="resume-preview.jpg"
-alt="Resume Preview"
-class="resume-img">
-
-<br><br>
-
-<a href="Shaik_Nazeer_Basha_Premium_Resume.pdf"
-target="_blank"
-class="btn">
-📄 View Full Resume
-</a>
+    <a href="Shaik_Nazeer_Basha_Premium_Resume.pdf"
+       target="_blank"
+       class="btn">
+       📄 View Full Resume
+    </a>
 
 </div>
-
-</div>
-
-<footer>
-© 2026 Shaik Nazeer Basha | AI Portfolio
-</footer>
 
 </body>
 </html>
