@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shaik Nazeer Basha | Portfolio</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body class="dark-mode">
 
 <nav class="navbar">
+
 <div class="logo">Nazeer Basha</div>
 
 <ul class="nav-links">
@@ -16,6 +20,7 @@
 <li><a href="certificates.html">Certificates</a></li>
 <li><a href="contact.html">Contact</a></li>
 </ul>
+
 </nav>
 
 <div class="container">
@@ -28,10 +33,16 @@
 
 <h2>B.Tech Artificial Intelligence Student</h2>
 
+<h3 id="typing-text">
+Artificial Intelligence Student
+</h3>
+
 <p>
-Artificial Intelligence Student at Chalapathi Institute of Technology |
-Python Learner | Machine Learning Enthusiast |
-Open to Internships
+Artificial Intelligence Student at Chalapathi Institute of Technology
+</p>
+
+<p>
+Python Learner • Machine Learning Enthusiast • Open To Internships
 </p>
 
 <br>
@@ -40,13 +51,42 @@ Open to Internships
 
 <a href="projects.html" class="btn">Projects</a>
 
+<a href="contact.html" class="btn">Contact</a>
+
 </div>
 
 </div>
 
 <footer>
-© 2026 Shaik Nazeer Basha
+© 2026 Shaik Nazeer Basha | AI Portfolio
 </footer>
+
+<script>
+
+const words = [
+"Artificial Intelligence Student",
+"Python Learner",
+"Machine Learning Enthusiast",
+"Web Developer",
+"Open To Internships"
+];
+
+let i = 0;
+
+setInterval(() => {
+
+document.getElementById("typing-text").innerText =
+words[i];
+
+i++;
+
+if(i >= words.length){
+i = 0;
+}
+
+},2000);
+
+</script>
 
 </body>
 </html>
