@@ -3,132 +3,236 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shaik Nazeer Basha | AI Student</title>
+<title>Shaik Nazeer Basha | Portfolio</title>
 
 <style>
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
 }
 
 body{
-    font-family:Arial, sans-serif;
-    background:#0f172a;
-    color:white;
-    text-align:center;
+background:#f8fafc;
+color:#1e293b;
+line-height:1.6;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:20px;
 }
 
 .hero{
-    padding:80px 20px;
+text-align:center;
+padding:60px 20px;
+background:white;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+margin-top:30px;
+}
+
+.profile{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #2563eb;
+margin-bottom:20px;
 }
 
 .hero h1{
-    font-size:50px;
-    margin-bottom:10px;
+font-size:40px;
+margin-bottom:10px;
 }
 
 .hero h2{
-    color:#38bdf8;
-    margin-bottom:20px;
+color:#2563eb;
+font-size:22px;
+margin-bottom:15px;
 }
 
 .hero p{
-    max-width:700px;
-    margin:auto;
-    line-height:1.8;
-}
-
-.section{
-    padding:50px 20px;
-}
-
-.skills span{
-    display:inline-block;
-    background:#1e293b;
-    padding:10px 20px;
-    margin:8px;
-    border-radius:8px;
+max-width:700px;
+margin:auto;
 }
 
 .btn{
-    display:inline-block;
-    margin:10px;
-    padding:12px 25px;
-    background:#38bdf8;
-    color:white;
-    text-decoration:none;
-    border-radius:8px;
+display:inline-block;
+padding:12px 25px;
+margin:10px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:8px;
+}
+
+.section{
+background:white;
+margin-top:25px;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.section h2{
+margin-bottom:15px;
+color:#2563eb;
+}
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.skill{
+background:#e0e7ff;
+padding:10px 15px;
+border-radius:8px;
+}
+
+.project{
+background:#f1f5f9;
+padding:15px;
+border-radius:10px;
+margin-top:15px;
 }
 
 footer{
-    padding:30px;
-    background:#111827;
-    margin-top:30px;
+text-align:center;
+padding:30px;
+margin-top:20px;
+color:#64748b;
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:30px;
+}
 }
 </style>
 </head>
 
 <body>
 
+<div class="container">
+
 <section class="hero">
-    <h1>SHAIK NAZEER BASHA</h1>
 
-    <h2>B.Tech Artificial Intelligence Student</h2>
+<img src="profile.jpg" alt="Shaik Nazeer Basha" class="profile">
 
-    <p>
-        Passionate about Artificial Intelligence, Machine Learning,
-        Software Development and Emerging Technologies.
-        Continuously learning and building innovative projects.
-    </p>
+<h1>SHAIK NAZEER BASHA</h1>
+
+<h2>B.Tech Artificial Intelligence Student</h2>
+
+<p>
+Chalapathi Institute of Technology • 3rd Year
+
+Passionate about Artificial Intelligence, Web Development,
+Python Programming and building innovative technology solutions.
+</p>
+
+<br>
+
+<a href="https://www.linkedin.com/in/shaiknazeerbasha2006" class="btn" target="_blank">LinkedIn</a>
+
+<a href="https://github.com/shaikchinnu23-hub" class="btn" target="_blank">GitHub</a>
+
 </section>
 
 <section class="section">
-    <h2>About Me</h2>
-    <br>
-    <p>
-        I am a B.Tech Artificial Intelligence student interested in
-        AI, Machine Learning, Programming and Modern Technologies.
-        I enjoy learning new skills and building practical projects.
-    </p>
+
+<h2>About Me</h2>
+
+<p>
+I am a B.Tech Artificial Intelligence student at Chalapathi Institute of Technology.
+I am passionate about AI, Web Development and emerging technologies.
+
+I enjoy learning new skills, building projects and exploring innovative
+solutions using Artificial Intelligence and Python.
+</p>
+
 </section>
 
 <section class="section">
-    <h2>Skills</h2>
-    <br>
-    <div class="skills">
-        <span>Python</span>
-        <span>Artificial Intelligence</span>
-        <span>Machine Learning</span>
-        <span>HTML</span>
-        <span>GitHub</span>
-    </div>
+
+<h2>Skills</h2>
+
+<div class="skills">
+
+<div class="skill">Python</div>
+
+<div class="skill">Artificial Intelligence</div>
+
+<div class="skill">Web Development</div>
+
+<div class="skill">GitHub</div>
+
+<div class="skill">Problem Solving</div>
+
+<div class="skill">Machine Learning (Learning)</div>
+
+</div>
+
 </section>
 
 <section class="section">
-    <h2>Certificates</h2>
-    <br>
-    <p>✔ Cisco Networking Basics</p>
-    <p>✔ Introduction to Modern AI</p>
-    <p>✔ Cybersecurity Essentials</p>
+
+<h2>Projects</h2>
+
+<div class="project">
+
+<h3>🤖 Jarvis Voice Assistant</h3>
+
+<p>
+A voice-controlled assistant capable of performing tasks through voice commands,
+including automation and security-related functionalities.
+</p>
+
+</div>
+
+<div class="project">
+
+<h3>🚀 Mochi Robot</h3>
+
+<p>
+A robotics project focused on automation, experimentation and practical implementation of technology concepts.
+</p>
+
+</div>
+
 </section>
 
 <section class="section">
-    <h2>Connect With Me</h2>
-    <br>
 
-    <a class="btn" href="https://www.linkedin.com/" target="_blank">
-        LinkedIn
-    </a>
+<h2>Certificates & Achievements</h2>
 
-    <a class="btn" href="https://github.com/shaikchinnu23-hub" target="_blank">
-        GitHub
-    </a>
+<ul>
+
+<li>✔ Cisco Networking Basics</li>
+
+<li>✔ Introduction to Modern AI</li>
+
+<li>✔ Cybersecurity Essentials</li>
+
+<li>✔ NPTEL Certified</li>
+
+<li>✔ Participated in 2 Hackathons</li>
+
+</ul>
+
 </section>
 
 <footer>
-    <p>© 2026 Shaik Nazeer Basha | AI Student Portfolio</p>
+
+<p>© 2026 Shaik Nazeer Basha | AI Student Portfolio</p>
+
 </footer>
+
+</div>
 
 </body>
 </html>
