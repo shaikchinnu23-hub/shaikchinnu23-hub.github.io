@@ -1,2 +1,6 @@
-# shaikchinnu23-hub.github.io
-Personal Portfolio Website showcasing my Cyber Security journey, certifications, projects, and professional achievements.
+# Shaik Nazeer Basha
+
+B.Tech Artificial Intelligence Student
+
+Personal portfolio website showcasing my AI projects,
+skills, certifications and learning journey.
