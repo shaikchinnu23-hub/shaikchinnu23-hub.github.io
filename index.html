@@ -3,19 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Shaik Nazeer Basha | AI Portfolio</title>
-
+<title>Shaik Nazeer Basha | Portfolio</title>
 <link rel="stylesheet" href="style.css">
-
 </head>
+
 <body>
 
 <nav class="navbar">
 
-<div class="logo">
-Nazeer Basha
-</div>
+<div class="logo">Nazeer Basha</div>
 
 <ul class="nav-links">
 <li><a href="index.html">Home</a></li>
@@ -28,169 +24,78 @@ Nazeer Basha
 
 </nav>
 
-<section class="hero">
+<div class="container">
 
-<div class="hero-content">
+<div class="card center">
 
-<span class="tag">
-🚀 AI • Machine Learning • Web Development
-</span>
+<img src="profile.jpg" class="profile" alt="Profile Photo">
 
-<h1>
-Building Intelligent Solutions For The Future
-</h1>
+<h1>SHAIK NAZEER BASHA</h1>
 
-<p class="subtitle">
+<h2>B.Tech Artificial Intelligence Student</h2>
 
-Artificial Intelligence Student at Chalapathi Institute of Technology.
+<h3 id="typing-text">
+Artificial Intelligence Student
+</h3>
 
-Passionate about AI, Machine Learning,
-Python, React.js and building real-world
-technology solutions.
-
+<p>
+Artificial Intelligence Student at Chalapathi Institute of Technology
 </p>
 
-<div id="typing-text">
-Artificial Intelligence Student
-</div>
+<p>
+Python Learner • Machine Learning Enthusiast • Open To Internships
+</p>
 
-<div class="hero-buttons">
+<br>
+
+<a href="about.html" class="btn">
+About Me
+</a>
 
 <a href="projects.html" class="btn">
-🚀 Explore Projects
+Projects
 </a>
 
-<a href="contact.html" class="btn btn-outline">
-📩 Contact Me
+<a href="contact.html" class="btn">
+Contact
+</a>
+
+<a href="resume.html" class="btn">
+📄 View Resume
 </a>
 
 </div>
 
 </div>
-
-<div class="cards-container">
-
-<div class="swipe-card active">
-
-<h3>🤖 Jarvis Voice Assistant</h3>
-
-<p>
-Voice-controlled AI assistant capable of automation,
-security control and smart command execution.
-</p>
-
-</div>
-
-<div class="swipe-card">
-
-<h3>🚀 Mochi Robot</h3>
-
-<p>
-AI-powered robotics project focused on
-automation and intelligent control systems.
-</p>
-
-</div>
-
-<div class="swipe-card">
-
-<h3>🏛️ Event Hall Booking Platform</h3>
-
-<p>
-React.js based Event Hall Booking Platform
-with User App, Vendor App and Admin Panel.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="stats">
-
-<div class="stat-card">
-<h2>3+</h2>
-<p>Projects</p>
-</div>
-
-<div class="stat-card">
-<h2>10+</h2>
-<p>Certificates</p>
-</div>
-
-<div class="stat-card">
-<h2>2024</h2>
-<p>Started AI Journey</p>
-</div>
-
-</section>
 
 <footer>
-
 © 2026 Shaik Nazeer Basha | AI Portfolio
-
 </footer>
 
 <script>
 
-/* Typing Text */
-
 const words = [
-
 "Artificial Intelligence Student",
 "Python Learner",
 "Machine Learning Enthusiast",
-"Frontend Developer",
+"Web Developer",
 "Open To Internships"
-
 ];
 
-let wordIndex = 0;
+let i = 0;
 
 setInterval(() => {
 
 document.getElementById("typing-text").innerText =
-words[wordIndex];
+words[i];
 
-wordIndex++;
+i++;
 
-if(wordIndex >= words.length){
-wordIndex = 0;
+if(i >= words.length){
+i = 0;
 }
 
 },2000);
-
-/* Swipe Cards */
-
-const cards =
-document.querySelectorAll(".swipe-card");
-
-let currentCard = 0;
-
-function showCard(){
-
-cards.forEach(card => {
-
-card.classList.remove("active");
-
-});
-
-cards[currentCard].classList.add("active");
-
-currentCard++;
-
-if(currentCard >= cards.length){
-
-currentCard = 0;
-
-}
-
-}
-
-showCard();
-
-setInterval(showCard,3000);
 
 </script>
 
