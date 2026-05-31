@@ -3,14 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shaik Nazeer Basha | Portfolio</title>
+<title>Shaik Nazeer Basha | AI Portfolio</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <nav class="navbar">
-
 <div class="logo">Nazeer Basha</div>
 
 <ul class="nav-links">
@@ -21,52 +20,49 @@
 <li><a href="contact.html">Contact</a></li>
 <li><a href="resume.html">Resume</a></li>
 </ul>
-
 </nav>
 
-<div class="container">
+<section class="hero">
 
-<div class="card center">
+<div class="hero-content">
 
-<img src="profile.jpg" class="profile" alt="Profile Photo">
+<h1>Building Intelligent Solutions with AI</h1>
 
-<h1>SHAIK NAZEER BASHA</h1>
+<p class="subtitle">
+Artificial Intelligence Student • React Developer • Machine Learning Enthusiast
+</p>
 
-<h2>B.Tech Artificial Intelligence Student</h2>
-
-<h3 id="typing-text">
+<div id="typing-text">
 Artificial Intelligence Student
-</h3>
+</div>
 
-<p>
-Artificial Intelligence Student at Chalapathi Institute of Technology
-</p>
-
-<p>
-Python Learner • Machine Learning Enthusiast • Open To Internships
-</p>
-
-<br>
-
-<a href="about.html" class="btn">
-About Me
-</a>
-
-<a href="projects.html" class="btn">
-Projects
-</a>
-
-<a href="contact.html" class="btn">
-Contact
-</a>
-
-<a href="resume.html" class="btn">
-📄 View Resume
-</a>
-
+<div class="hero-buttons">
+<a href="projects.html" class="btn">🚀 Explore Projects</a>
+<a href="contact.html" class="btn btn-outline">📩 Contact Me</a>
 </div>
 
 </div>
+
+<div class="cards-container">
+
+<div class="swipe-card active">
+<h3>🤖 Jarvis Voice Assistant</h3>
+<p>Voice-controlled AI assistant with automation and smart commands.</p>
+</div>
+
+<div class="swipe-card">
+<h3>🚀 Mochi Robot</h3>
+<p>AI-based robotics project focused on automation and smart control.</p>
+</div>
+
+<div class="swipe-card">
+<h3>🏛️ Event Hall Booking Platform</h3>
+<p>User App • Vendor App • Admin Panel built using React.js and JavaScript.</p>
+</div>
+
+</div>
+
+</section>
 
 <footer>
 © 2026 Shaik Nazeer Basha | AI Portfolio
@@ -76,26 +72,42 @@ Contact
 
 const words = [
 "Artificial Intelligence Student",
-"Python Learner",
+"React Developer",
 "Machine Learning Enthusiast",
-"Web Developer",
 "Open To Internships"
 ];
 
-let i = 0;
+let wordIndex = 0;
+
+setInterval(() => {
+document.getElementById("typing-text").innerText =
+words[wordIndex];
+
+wordIndex++;
+
+if(wordIndex >= words.length){
+wordIndex = 0;
+}
+},2000);
+
+
+const cards = document.querySelectorAll(".swipe-card");
+
+let currentCard = 0;
 
 setInterval(() => {
 
-document.getElementById("typing-text").innerText =
-words[i];
+cards[currentCard].classList.remove("active");
 
-i++;
+currentCard++;
 
-if(i >= words.length){
-i = 0;
+if(currentCard >= cards.length){
+currentCard = 0;
 }
 
-},2000);
+cards[currentCard].classList.add("active");
+
+},3000);
 
 </script>
 
